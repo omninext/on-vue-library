@@ -5,6 +5,7 @@ import * as components from '@/lib-components/index';
 // install function executed by Vue.use()
 const install = function installOnVueLibrary(Vue) {
   Object.entries(components).forEach(([componentName, component]) => {
+    console.log("Component loading...",component,componentName)
     Vue.component(componentName, component);
   });
 };

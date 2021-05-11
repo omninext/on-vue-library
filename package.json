@@ -1,19 +1,16 @@
 {
   "name": "on-vue-library",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-
   "main": "dist/on-vue-library.ssr.js",
   "browser": "dist/on-vue-library.esm.js",
   "module": "dist/on-vue-library.esm.js",
   "unpkg": "dist/on-vue-library.min.js",
-
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
   "sideEffects": false,
-
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
@@ -21,10 +18,7 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-
-  "dependencies": {
-  },
-
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",

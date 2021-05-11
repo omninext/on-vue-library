@@ -1,9 +1,11 @@
 <script>
 import Vue from 'vue';
 // Uncomment import and local "components" registration if library is not registered globally.
-// import { OnVueLibrarySample } from '@/entry.esm';
+// import { OnVueLibrary, OnButton, OnForm } from '@/entry.esm';
+
 
 export default Vue.extend({
+
   name: 'ServeDev',
   // components: {
   //  OnVueLibrarySample,
@@ -13,6 +15,12 @@ export default Vue.extend({
 
 <template>
   <div id="app">
-    <on-vue-library-sample />
+    <on-vue-library />
+    <on-button>Ciao</on-button>
+    <on-form title="Test">
+      <template v-slot:content>
+        <h1>content</h1>
+      </template>
+    </on-form>
   </div>
 </template>
